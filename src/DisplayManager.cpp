@@ -30,7 +30,7 @@ bool UPPERCASE_LETTERS = true;
 CRGB leds[MATRIX_WIDTH * MATRIX_HEIGHT];
 
 FastLED_NeoMatrix* matrix = new FastLED_NeoMatrix(
-    leds, 8, 8, 4, 1, NEO_MATRIX_TOP + NEO_MATRIX_LEFT + NEO_MATRIX_ROWS + NEO_MATRIX_PROGRESSIVE);
+    leds, 32, 8, NEO_MATRIX_TOP + NEO_MATRIX_LEFT + NEO_MATRIX_COLUMNS + NEO_MATRIX_ZIGZAG);
 
 void DisplayManager_::setFont(FONT_TYPE fontType) {
     switch (fontType) {
